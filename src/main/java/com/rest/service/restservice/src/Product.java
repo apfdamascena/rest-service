@@ -1,5 +1,4 @@
 package com.rest.service.restservice.src;
-
 import com.rest.service.restservice.Utils.Constants;
 
 public class Product {

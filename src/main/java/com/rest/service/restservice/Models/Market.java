@@ -4,7 +4,7 @@ import com.rest.service.restservice.src.Product;
 
 public class Market {
 
-    private ArrayList<Product> products = new ArrayList<Product>();
+    private static ArrayList<Product> products = new ArrayList<Product>();
 
     public Market(){
         Product produto1 = new Product("PC Gamer", "12000", "Eletronicos");
@@ -13,7 +13,7 @@ public class Market {
         products.add(produto2);
     }
 
-    public ArrayList<Product> getProducts(){
-        return this.products;
+    public static ArrayList<Product> getProducts(){
+        return products;
     }
 }
