@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.rest.service.restservice.src.Product;
-import com.rest.service.restservice.src.Admin.Admin;
 
 import java.util.List;
 
@@ -22,7 +21,7 @@ public class MarketController {
         return market.getAllProducts();
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/admin")
+    @RequestMapping(method = RequestMethod.POST, value = "/products")
     public void addProduct(@RequestBody Product product){
         market.addProducts(product);
     }

@@ -2,18 +2,19 @@ package com.rest.service.restservice.Models;
 import java.util.ArrayList;
 import com.rest.service.restservice.src.Product;
 import org.springframework.stereotype.Service;
-import java.util.Arrays;
-import java.util.List;
+import java.util.ArrayList;
 
 @Service
 public class Market {
 
-    private  List<Product> products = Arrays.asList(
-        new Product("PC Gamer", "12000", "Eletronicos"),
-        new Product("Mesa", "600", "Utensilios")
-    );
+    private  ArrayList<Product> products = new ArrayList<Product>();
 
-    public  List<Product> getAllProducts(){
+    public Market(){
+        products.add(new Product("PC Gamer", "12000", "Eletronicos"));
+        products.add(new Product("Mesa", "600", "Utensilios"));
+    }
+
+    public  ArrayList<Product> getAllProducts(){
         return products;
     }
 
