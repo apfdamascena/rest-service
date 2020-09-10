@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MarketController {
 
+    private Market market = new Market();
+
     @GetMapping("/products")
     public Market market(){
-        return new Market("AlekiMarket");
+        return this.market;
     }
 }

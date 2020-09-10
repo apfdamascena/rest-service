@@ -1,7 +1,7 @@
 package com.rest.service.restservice.Utils;
 
 public enum Constants {
-    NAME(0), PRICE(1);
+    NAME(0), PRICE(1), TYPE(2);
 
     private final int optionToChoose ;
     Constants(int optionChosen ){
