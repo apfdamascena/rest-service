@@ -17,6 +17,11 @@ public class Modifica {
         String PRODUCT_TO_ADD = "insert into Product"
                 + "(name, price, type)"
                 + "values("+product.getName()+","+product.getPrice()+","+product.getType()+")";
-        this.driver.insertProduct(PRODUCT_TO_ADD);
+        this.driver.executeUpdate(PRODUCT_TO_ADD);
+    }
+
+    public void deleteProduct(int id) throws  SQLException {
+        String PRODUCT_TO_DELETE = "delete from Product where id=" + id;
+        this.driver.executeUpdate(PRODUCT_TO_DELETE);
     }
 }

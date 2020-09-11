@@ -5,7 +5,6 @@ import com.rest.service.restservice.src.interfaces.Autenticavel;
 
 public class Admin implements Autenticavel, Modificavel{
 
-
     private Autentica autenticador = new Autentica() ;
     private Modifica modificador = new Modifica();
     private boolean DoYouHavePermissions = false;
@@ -35,7 +34,17 @@ public class Admin implements Autenticavel, Modificavel{
     }
 
     @Override
-    public void deleteProduct(int id) {
+    public void tryToDeleteProduct(int id) {
+        if(DoYouHavePermissions){
+            this.deleteProduct(id);
+        }
+    }
 
+    private void deleteProduct(int id){
+        try {
+            this.modificador.deleteProduct(id);
+        } catch (Exception execution){
+            execution.printStackTrace();
+        }
     }
 }

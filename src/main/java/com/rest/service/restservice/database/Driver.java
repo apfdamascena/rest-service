@@ -23,7 +23,7 @@ public class Driver {
         return this.statement.executeQuery(whatDoIHaveToDo);
     }
 
-    public int insertProduct(String whatDoIHaveToDo) throws SQLException {
+    public int executeUpdate(String whatDoIHaveToDo) throws SQLException {
         return this.statement.executeUpdate(whatDoIHaveToDo);
     }
 }
