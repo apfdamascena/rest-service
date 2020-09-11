@@ -22,4 +22,8 @@ public class Driver {
     public ResultSet tryToGetResult(String whatDoIHaveToDo) throws SQLException{
         return this.statement.executeQuery(whatDoIHaveToDo);
     }
+
+    public int insertProduct(String whatDoIHaveToDo) throws SQLException {
+        return this.statement.executeUpdate(whatDoIHaveToDo);
+    }
 }
