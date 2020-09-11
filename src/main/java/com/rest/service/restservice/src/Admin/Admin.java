@@ -8,6 +8,7 @@ public class Admin implements Autenticavel{
 
 
     private Autentica autenticador;
+    private boolean DoYouHavePermissions = false;
 
     public Admin(int password){
         this.autenticador = new Autentica();
@@ -15,6 +16,6 @@ public class Admin implements Autenticavel{
 
     @Override
     public boolean autentica(int password){
-        return this.autenticador.autentica(password);
+        return this.DoYouHavePermissions = this.autenticador.autentica(password);
     }    
 }
