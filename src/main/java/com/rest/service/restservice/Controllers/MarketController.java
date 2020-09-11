@@ -14,10 +14,11 @@ import java.util.List;
 @RestController
 public class MarketController {
 
-    private Market market = new Market();
+    private Market market;
 
     @RequestMapping("/products")
     public List<Product> market(){
+        this.market = new Market();
         return market.getAllProducts();
     }
 

@@ -13,13 +13,13 @@ public class Market {
 
     private ArrayList<Product> products = new ArrayList<Product>();
     private Driver driver = new Driver();
-    private String allProducts = "select * from Product";
+    private String selectProducts = "select * from Product";
     private ResultSet result;
 
 
     public Market(){
         try {
-            this.result = this.driver.tryToGetResult(allProducts);
+            this.result = this.driver.tryToGetResult(selectProducts);
             this.readResultAndInsertToProducts();
         } catch (Exception execution){
             execution.printStackTrace();
@@ -40,12 +40,11 @@ public class Market {
             String price = this.result.getString("price");
             String type = this.result.getString("type");
             this.insertToProducts(name, price, type);
-
         }
     }
 
     private void insertToProducts(String name, String price, String type){
-        Product productToAdd = new Product(name, price, price);
+        Product productToAdd = new Product(name, price, type);
         this.addProducts(productToAdd);
     }
 
