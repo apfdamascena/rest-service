@@ -1,6 +1,6 @@
 package com.rest.service.restservice.src.interfaces;
 
-import com.rest.service.restservice.src.Product;
+import com.rest.service.restservice.src.Products.Product;
 
 public interface Modificavel {
 

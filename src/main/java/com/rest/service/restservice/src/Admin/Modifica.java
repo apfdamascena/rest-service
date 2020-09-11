@@ -1,7 +1,7 @@
 package com.rest.service.restservice.src.Admin;
 
 import com.rest.service.restservice.database.Driver;
-import com.rest.service.restservice.src.Product;
+import com.rest.service.restservice.src.Products.Product;
 
 import java.sql.SQLException;
 

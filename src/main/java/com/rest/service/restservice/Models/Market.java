@@ -4,9 +4,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.rest.service.restservice.database.Driver;
-import com.rest.service.restservice.src.Product;
+import com.rest.service.restservice.src.Products.Product;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
 
 @Service
 public class Market {

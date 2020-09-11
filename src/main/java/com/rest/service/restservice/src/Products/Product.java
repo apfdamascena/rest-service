@@ -1,4 +1,4 @@
-package com.rest.service.restservice.src;
+package com.rest.service.restservice.src.Products;
 import com.rest.service.restservice.Utils.Constants;
 
 public class Product {

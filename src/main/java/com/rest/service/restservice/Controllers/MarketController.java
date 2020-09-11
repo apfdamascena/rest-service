@@ -2,12 +2,11 @@ package com.rest.service.restservice.Controllers;
 
 import com.rest.service.restservice.Models.Market;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.rest.service.restservice.src.Product;
+import com.rest.service.restservice.src.Products.Product;
 
 import java.util.List;
 

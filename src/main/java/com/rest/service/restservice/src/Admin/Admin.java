@@ -1,5 +1,5 @@
 package com.rest.service.restservice.src.Admin;
-import com.rest.service.restservice.src.Product;
+import com.rest.service.restservice.src.Products.Product;
 import com.rest.service.restservice.src.interfaces.Modificavel;
 import com.rest.service.restservice.src.interfaces.Autenticavel;
 
