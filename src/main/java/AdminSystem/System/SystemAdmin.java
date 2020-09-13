@@ -18,9 +18,14 @@ public class SystemAdmin {
         ShowMessage.givePassword();
         int password = keyboard.nextInt();
         checkPasswordToAccess(password);
+        menu();
     }
 
-    private static void checkPasswordToAccess(int givenPassword ){
-        admin = new Admin(givenPassword);
+    private static void checkPasswordToAccess(int givenPassword ){ admin = new Admin(givenPassword);}
+
+    private static void menu(){
+        
     }
+
+
 }
