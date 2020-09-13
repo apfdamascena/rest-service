@@ -1,6 +1,7 @@
 package AdminSystem.System;
 import AdminSystem.Admin.Admin;
 import AdminSystem.Utils.ShowMessage;
+import com.rest.service.restservice.Utils.Constants;
 
 import java.util.Scanner;
 
@@ -25,9 +26,18 @@ public class SystemAdmin {
 
     private static void menu(){
         if(admin.isAutenticado()){
-            
+            ShowMessage.optionToChoose();
+            int optionChosen = Integer.parseInt(keyboard.nextLine());
+            whatDoIHaveToDo(optionChosen);
         }
     }
+
+    private static void whatDoIHaveToDo(int optionChosen){
+        if(optionChosen == Constants.ZERO.value()) tryToAddProduct();
+        if(optionChosen == Constants.ONE.value()) tryToRemoveProduct();
+    }
+
+    private
 
 
 }
