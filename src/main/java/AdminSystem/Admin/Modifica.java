@@ -1,4 +1,4 @@
-package com.rest.service.restservice.src.Admin;
+package AdminSystem.Admin;
 
 import com.rest.service.restservice.database.Driver;
 import com.rest.service.restservice.src.Products.Product;

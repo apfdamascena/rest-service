@@ -1,9 +1,9 @@
-package com.rest.service.restservice.src.Admin;
+package AdminSystem.Admin;
+import AdminSystem.interfaces.Autenticavel;
+import AdminSystem.interfaces.Modificavel;
 import com.rest.service.restservice.src.Products.Product;
-import com.rest.service.restservice.src.interfaces.Modificavel;
-import com.rest.service.restservice.src.interfaces.Autenticavel;
 
-public class Admin implements Autenticavel, Modificavel{
+public class Admin implements Autenticavel, Modificavel {
 
     private Autentica autenticador = new Autentica() ;
     private Modifica modificador = new Modifica();

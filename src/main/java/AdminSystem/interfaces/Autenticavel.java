@@ -1,4 +1,4 @@
-package com.rest.service.restservice.src.interfaces;
+package AdminSystem.interfaces;
 
 public interface Autenticavel {
 
