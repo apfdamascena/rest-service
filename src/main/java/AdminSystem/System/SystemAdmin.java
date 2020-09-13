@@ -47,5 +47,10 @@ public class SystemAdmin {
         menu();
     }
 
+    private static void tryToRemoveProduct(int id){
+        int productIdToRemove = Integer.parseInt(keyboard.nextLine());
+        admin.tryToDeleteProduct(productIdToRemove);
+    }
+
 
 }
