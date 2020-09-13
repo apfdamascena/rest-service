@@ -2,6 +2,7 @@ package AdminSystem.System;
 import AdminSystem.Admin.Admin;
 import AdminSystem.Utils.ShowMessage;
 import com.rest.service.restservice.Utils.Constants;
+import com.rest.service.restservice.src.Products.Product;
 
 import java.util.Scanner;
 
@@ -37,7 +38,14 @@ public class SystemAdmin {
         if(optionChosen == Constants.ONE.value()) tryToRemoveProduct();
     }
 
-    private
+    private static void tryToAddProduct(){
+        String name = keyboard.nextLine();
+        String price = keyboard.nextLine();
+        String type = keyboard.nextLine();
+        Product productToAdd = new Product(name, price, type);
+        admin.tryToAddProduct(productToAdd);
+        menu();
+    }
 
 
 }
