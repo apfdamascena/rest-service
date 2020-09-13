@@ -8,5 +8,7 @@ public enum Constants {
         this.optionToChoose = optionChosen;
     }
 
-    public int value(){return this.optionToChoose;}
+    public int value(){
+        return this.optionToChoose;
+    }
 }
