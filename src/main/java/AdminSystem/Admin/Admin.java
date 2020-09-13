@@ -47,4 +47,8 @@ public class Admin implements Autenticavel, Modificavel {
             execution.printStackTrace();
         }
     }
+
+    public boolean isAutenticado(){
+        return DoYouHavePermissions;
+    }
 }

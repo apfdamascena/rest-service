@@ -24,7 +24,9 @@ public class SystemAdmin {
     private static void checkPasswordToAccess(int givenPassword ){ admin = new Admin(givenPassword);}
 
     private static void menu(){
-        
+        if(admin.isAutenticado()){
+            
+        }
     }
 
 
