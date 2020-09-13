@@ -4,7 +4,7 @@ import AdminSystem.Utils.ShowMessage;
 
 import java.util.Scanner;
 
-public class System {
+public class SystemAdmin {
 
     private static Admin admin;
     private static Scanner keyboard = new Scanner(System.in);
@@ -17,10 +17,10 @@ public class System {
         ShowMessage.welcome();
         ShowMessage.givePassword();
         int password = keyboard.nextInt();
-        checkPasswordToAcess(password);
+        checkPasswordToAccess(password);
     }
 
-    private static void checkPasswordToAcess(int givenPassword ){
+    private static void checkPasswordToAccess(int givenPassword ){
         admin = new Admin(givenPassword);
     }
 }
