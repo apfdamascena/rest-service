@@ -18,7 +18,7 @@ public class SystemAdmin {
     private static void adminSystem(){
         ShowMessage.welcome();
         ShowMessage.givePassword();
-        int password = keyboard.nextInt();
+        int password = Integer.parseInt(keyboard.nextLine());
         checkPasswordToAccess(password);
         menu();
     }
@@ -34,8 +34,8 @@ public class SystemAdmin {
     }
 
     private static void whatDoIHaveToDo(int optionChosen){
-        if(optionChosen == Constants.ZERO.value()) tryToAddProduct();
-        if(optionChosen == Constants.ONE.value()) tryToRemoveProduct();
+        if(optionChosen == Constants.ONE.value()) tryToAddProduct();
+        if(optionChosen == Constants.TWO.value()) tryToRemoveProduct();
     }
 
     private static void tryToAddProduct(){
@@ -47,7 +47,7 @@ public class SystemAdmin {
         menu();
     }
 
-    private static void tryToRemoveProduct(int id){
+    private static void tryToRemoveProduct(){
         int productIdToRemove = Integer.parseInt(keyboard.nextLine());
         admin.tryToDeleteProduct(productIdToRemove);
     }

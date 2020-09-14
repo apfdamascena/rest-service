@@ -11,6 +11,6 @@ public class ShowMessage {
     }
     public static void optionToChoose(){
         System.out.println("Escolha uma opçao");
-        System.out.println("1 - Add product \n 2 - Remove Product");
+        System.out.println("1 - Add product\n2 - Remove Product");
     }
 }
