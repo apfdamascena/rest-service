@@ -12,7 +12,7 @@ public class Market {
 
     private ArrayList<Product> products = new ArrayList<Product>();
     private Driver driver = new Driver();
-    private String selectProducts = "select * from Product";
+    private String selectProducts = "SELECT * FROM Product";
     private ResultSet result;
 
 
