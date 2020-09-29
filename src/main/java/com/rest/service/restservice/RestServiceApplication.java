@@ -32,5 +32,4 @@ public class RestServiceApplication {
 			http.httpBasic();
 		}
 	}
-
 }
